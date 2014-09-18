@@ -1,0 +1,15 @@
+{
+  "name": "Gamblor",
+  "version": "0.0.0",
+  "description": "Gamblor",
+  "main": "app.js",
+  "author": {
+    "name": "Phil",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "jade": "*",
+    "stylus": "*"
+  }
+}
