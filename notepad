@@ -1,0 +1,88 @@
+2014-09-18T21:34:25.805276+00:00 heroku[api]: Enable Logplex by philipbrockmeyer@gmail.com
+2014-09-18T21:34:25.805386+00:00 heroku[api]: Release v2 created by philipbrockmeyer@gmail.com
+2014-09-18T22:06:07.505298+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/" host=gamblor.herokuapp.com request_id=d37f646f-0616-46d2-9a2e-9dedee4500cf fwd="23.16.158.136" dyno= connect= service= status=502 bytes=
+2014-09-18T22:06:07.682063+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=gamblor.herokuapp.com request_id=e1b8b8b4-84ea-4ba1-af90-e910683464d2 fwd="23.16.158.136" dyno= connect= service= status=502 bytes=
+2014-09-18T22:11:17+00:00 heroku[slug-compiler]: Slug compilation started
+2014-09-18T22:11:26+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-09-18T22:11:26.373585+00:00 heroku[api]: Scale to web=1 by philipbrockmeyer@gmail.com
+2014-09-18T22:11:26.458896+00:00 heroku[api]: Release v3 created by philipbrockmeyer@gmail.com
+2014-09-18T22:11:26.458842+00:00 heroku[api]: Deploy cf17a91 by philipbrockmeyer@gmail.com
+2014-09-18T22:11:29.075680+00:00 heroku[web.1]: Starting process with command `node app.js`
+2014-09-18T22:11:30.116941+00:00 app[web.1]: Express server listening on port 18532
+2014-09-18T22:11:30.824701+00:00 heroku[web.1]: State changed from starting to up
+2014-09-18T22:11:46.824708+00:00 heroku[router]: at=info method=GET path="/" host=gamblor.herokuapp.com request_id=4e727e6b-0f85-4d7e-af0d-7dfbc1906f7f fwd="23.16.158.136" dyno=web.1 connect=16ms service=403ms status=200 bytes=329
+2014-09-18T22:11:46.822306+00:00 app[web.1]: [90mGET / [32m200 [90m398ms - 170b[0m
+2014-09-18T22:11:47.067496+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=gamblor.herokuapp.com request_id=cb5cb117-ff38-44e0-a57b-bc46b049800f fwd="23.16.158.136" dyno=web.1 connect=3ms service=93ms status=200 bytes=397
+2014-09-18T22:11:47.064852+00:00 app[web.1]: [90mGET /stylesheets/style.css [32m200 [90m88ms - 110b[0m
+2014-09-18T22:11:47.268712+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=gamblor.herokuapp.com request_id=7557b9a6-6d8b-44c3-9183-0bbcb5e98f24 fwd="23.16.158.136" dyno=web.1 connect=8ms service=8ms status=200 bytes=1634
+2014-09-18T22:12:32.897615+00:00 heroku[router]: at=info method=GET path="/" host=gamblor.herokuapp.com request_id=994df59e-70a8-4685-9065-c6a61b29b643 fwd="54.87.128.104" dyno=web.1 connect=2ms service=23ms status=200 bytes=329
+2014-09-18T22:12:32.894889+00:00 app[web.1]: [90mGET / [32m200 [90m21ms - 170b[0m
+2014-09-18T22:42:40+00:00 heroku[slug-compiler]: Slug compilation started
+2014-09-18T22:42:48+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-09-18T22:42:48.624878+00:00 heroku[api]: Deploy 7e581f9 by philipbrockmeyer@gmail.com
+2014-09-18T22:42:48.624944+00:00 heroku[api]: Release v4 created by philipbrockmeyer@gmail.com
+2014-09-18T22:42:48.906210+00:00 heroku[web.1]: State changed from up to starting
+2014-09-18T22:42:51.204682+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-09-18T22:42:52.287158+00:00 heroku[web.1]: Starting process with command `node app.js`
+2014-09-18T22:42:52.544242+00:00 heroku[web.1]: Process exited with status 143
+2014-09-18T22:42:53.688099+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:32:5)
+2014-09-18T22:42:53.688109+00:00 app[web.1]:     at node.js:906:3
+2014-09-18T22:42:53.685674+00:00 app[web.1]:       throw new TypeError("Environment file don't exist: " + env_file);
+2014-09-18T22:42:53.688105+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2014-09-18T22:42:53.688101+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2014-09-18T22:42:53.688108+00:00 app[web.1]:     at startup (node.js:119:16)
+2014-09-18T22:42:53.685830+00:00 app[web.1]:             ^
+2014-09-18T22:42:53.688098+00:00 app[web.1]:     at module.exports (/app/node_modules/node-env-file/lib/index.js:109:13)
+2014-09-18T22:42:53.688103+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2014-09-18T22:42:53.685264+00:00 app[web.1]: /app/node_modules/node-env-file/lib/index.js:109
+2014-09-18T22:42:53.688102+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2014-09-18T22:42:53.684800+00:00 app[web.1]: 
+2014-09-18T22:42:53.688085+00:00 app[web.1]: TypeError: Environment file don't exist: /app/dev.env
+2014-09-18T22:42:53.688107+00:00 app[web.1]:     at Function.Module.runMain (module.js:497:10)
+2014-09-18T22:42:54.910131+00:00 heroku[web.1]: Process exited with status 8
+2014-09-18T22:42:54.921244+00:00 heroku[web.1]: State changed from starting to crashed
+2014-09-18T22:42:54.922075+00:00 heroku[web.1]: State changed from crashed to starting
+2014-09-18T22:42:57.719756+00:00 heroku[web.1]: Starting process with command `node app.js`
+2014-09-18T22:42:59.158571+00:00 app[web.1]: /app/node_modules/node-env-file/lib/index.js:109
+2014-09-18T22:42:59.158891+00:00 app[web.1]:             ^
+2014-09-18T22:42:59.160782+00:00 app[web.1]: TypeError: Environment file don't exist: /app/dev.env
+2014-09-18T22:42:59.160798+00:00 app[web.1]:     at node.js:906:3
+2014-09-18T22:42:59.158082+00:00 app[web.1]: 
+2014-09-18T22:42:59.160793+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2014-09-18T22:42:59.158886+00:00 app[web.1]:       throw new TypeError("Environment file don't exist: " + env_file);
+2014-09-18T22:42:59.160791+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2014-09-18T22:42:59.160795+00:00 app[web.1]:     at Function.Module.runMain (module.js:497:10)
+2014-09-18T22:42:59.160785+00:00 app[web.1]:     at module.exports (/app/node_modules/node-env-file/lib/index.js:109:13)
+2014-09-18T22:42:59.160790+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2014-09-18T22:42:59.160787+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:32:5)
+2014-09-18T22:42:59.160788+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2014-09-18T22:42:59.160797+00:00 app[web.1]:     at startup (node.js:119:16)
+2014-09-18T22:42:59.868880+00:00 heroku[web.1]: Process exited with status 8
+2014-09-18T22:42:59.880522+00:00 heroku[web.1]: State changed from starting to crashed
+2014-09-18T22:43:00.409867+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=gamblor.herokuapp.com request_id=34fbdd07-75ab-4d48-8bc8-6e50622335e3 fwd="54.87.128.104" dyno= connect= service= status=503 bytes=
+2014-09-18T22:44:17+00:00 heroku[slug-compiler]: Slug compilation started
+2014-09-18T22:44:27+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-09-18T22:44:27.466753+00:00 heroku[api]: Deploy 77bb69d by philipbrockmeyer@gmail.com
+2014-09-18T22:44:27.466824+00:00 heroku[api]: Release v5 created by philipbrockmeyer@gmail.com
+2014-09-18T22:44:27.669847+00:00 heroku[web.1]: State changed from crashed to starting
+2014-09-18T22:44:29.624194+00:00 heroku[web.1]: Starting process with command `node app.js`
+2014-09-18T22:44:30.703757+00:00 app[web.1]: 
+2014-09-18T22:44:30.706156+00:00 app[web.1]:             ^
+2014-09-18T22:44:30.705934+00:00 app[web.1]:       throw new TypeError("Environment file don't exist: " + env_file);
+2014-09-18T22:44:30.708270+00:00 app[web.1]: TypeError: Environment file don't exist: /app/dev.env
+2014-09-18T22:44:30.708275+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:32:5)
+2014-09-18T22:44:30.708278+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2014-09-18T22:44:30.708283+00:00 app[web.1]:     at Function.Module.runMain (module.js:497:10)
+2014-09-18T22:44:30.708284+00:00 app[web.1]:     at startup (node.js:119:16)
+2014-09-18T22:44:30.708279+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2014-09-18T22:44:30.708282+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2014-09-18T22:44:30.708274+00:00 app[web.1]:     at module.exports (/app/node_modules/node-env-file/lib/index.js:109:13)
+2014-09-18T22:44:30.708277+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2014-09-18T22:44:30.708286+00:00 app[web.1]:     at node.js:906:3
+2014-09-18T22:44:30.705536+00:00 app[web.1]: /app/node_modules/node-env-file/lib/index.js:109
+2014-09-18T22:44:31.729142+00:00 heroku[web.1]: State changed from starting to crashed
+2014-09-18T22:44:31.714855+00:00 heroku[web.1]: Process exited with status 8
+2014-09-18T22:44:41.095006+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=gamblor.herokuapp.com request_id=225a3a87-faab-4a3d-bd5e-404169fa15c6 fwd="23.16.158.136" dyno= connect= service= status=503 bytes=
+2014-09-18T22:44:47.523132+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=gamblor.herokuapp.com request_id=d4691b34-d99d-4b31-ae05-173150fe4f87 fwd="23.16.158.136" dyno= connect= service= status=503 bytes=
+2014-09-18T22:44:59.371091+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/users" host=gamblor.herokuapp.com request_id=485c4fbe-8484-445b-a49e-59af83ee38a6 fwd="23.16.158.136" dyno= connect= service= status=503 bytes=
+2014-09-18T22:45:22.213907+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=gamblor.herokuapp.com request_id=d2a69228-cbf7-425d-81b7-5a933c3cc1b9 fwd="54.87.128.104" dyno= connect= service= status=503 bytes=

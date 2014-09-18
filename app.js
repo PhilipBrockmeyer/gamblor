@@ -8,7 +8,6 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
-var env = require('node-env-file');
 
 var app = express();
 
@@ -25,14 +24,16 @@ app.use(app.router);
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
+console.log(app.get('env'));
 
 // development only
-if ('development' == app.get('env')) {
+app.configure('development', function() {
+    //if ('development' == app.get('env')) {
+    var env = require('node-env-file');
+
     app.use(express.errorHandler());
     env(__dirname + '/dev.env');
-}
-
-
+});
 
 app.get('/', routes.index);
 app.get('/users', user.list);
