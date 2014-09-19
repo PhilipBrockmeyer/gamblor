@@ -1,5 +1,8 @@
 ﻿var request = require('request');
 var jsdom = require('jsdom');
+var mongo = require('mongodb');
+var monk = require('monk');
+var db = monk(process.env.CONNECTION_STRING);
 
 /*
  * GET game lists.
@@ -9,8 +12,20 @@ exports.list = function (req, res) {
     res.setHeader('Content-Type', 'application/json');
     request.get('http://sportselect.wclc.com/Proline-Gamelist-html.htm', function (error, response, body) {
         jsdom.env(body, [], function (err, window) {
-            var games = parseGamesFromSportSelect(window);
-            res.end(JSON.stringify(games));
+            var saskGames = parseGamesFromSportSelect(window);
+
+            var results = [
+                {
+                    set: 'sask',
+                    games: saskGames
+                },
+                {
+                    set: 'bc',
+                    games: []
+                }
+            ];
+            
+            res.end(JSON.stringify(results));
         });
     });
 };
