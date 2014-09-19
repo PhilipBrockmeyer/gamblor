@@ -1,12 +1,14 @@
 ﻿require.config({
-    baseUrl: 'javascripts/lib',
+    baseUrl: 'javascripts',
     paths: {
-        jquery: 'jquery-2.1.1',
+        jquery: 'lib/jquery-2.1.1',
+        knockout: 'lib/knockout',
     }
 });
 
-require(["jquery", "knockout"], function($, ko) {
+require(["jquery", "knockout", "viewmodels/gamelistViewmodel"], function($, ko, gamelist) {
     $(function() {
-        
+        var vm = new gamelist();
+        vm.load();
     });
 });
