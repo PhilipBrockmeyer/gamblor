@@ -9,8 +9,22 @@ var user = require('./routes/user');
 var gamelist = require('./routes/api/v1/gamelist');
 var http = require('http');
 var path = require('path');
+var mongo = require('mongodb');
+var monk = require('monk');
 
 var app = express();
+
+// development only
+app.configure('development', function () {
+    //if ('development' == app.get('env')) {
+    var env = require('node-env-file');
+    
+    app.use(express.errorHandler());
+    env(__dirname + '/dev.env');
+});
+
+var db = monk(process.env.CONNECTION_STRING);
+
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -21,20 +35,14 @@ app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
+app.use(function (req, res, next) {
+    req.db = db;
+    next();
+});
 app.use(app.router);
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-console.log(app.get('env'));
-
-// development only
-app.configure('development', function() {
-    //if ('development' == app.get('env')) {
-    var env = require('node-env-file');
-
-    app.use(express.errorHandler());
-    env(__dirname + '/dev.env');
-});
 
 app.get('/', routes.index);
 app.get('/users', user.list);

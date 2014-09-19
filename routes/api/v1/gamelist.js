@@ -1,8 +1,5 @@
 ﻿var request = require('request');
 var jsdom = require('jsdom');
-var mongo = require('mongodb');
-var monk = require('monk');
-var db = monk(process.env.CONNECTION_STRING);
 
 /*
  * GET game lists.
