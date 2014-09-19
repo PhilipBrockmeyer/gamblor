@@ -25,11 +25,11 @@ function parseGamesFromSportSelect(window) {
             {
                 gameDate: row.attr('gamedate'),
                 gameNumber: row.find('td:nth-child(1)').text(),
-                visitor: row.find('td:nth-child(4)').attr('name'),
-                home: row.find('td:nth-child(5)').attr('name'),
-                visitorOdds: row.find('td:nth-child(6)').text(),
-                tieOdds: row.find('td:nth-child(7)').text(),
-                homeOdds: row.find('td:nth-child(8)').text()
+                visitor: row.find('td:nth-child(5)').attr('name'),
+                home: row.find('td:nth-child(6)').attr('name'),
+                visitorOdds: row.find('td:nth-child(8)').text(),
+                tieOdds: row.find('td:nth-child(10)').text(),
+                homeOdds: row.find('td:nth-child(12)').text()
             });
     });
 
