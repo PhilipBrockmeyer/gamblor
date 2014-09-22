@@ -35,8 +35,10 @@
     <Compile Include="public\javascripts\lib\knockout.js" />
     <Compile Include="public\javascripts\main.js" />
     <Compile Include="public\javascripts\require.js" />
+    <Compile Include="public\javascripts\text.js" />
     <Compile Include="public\javascripts\viewmodels\gamelistViewmodel.js" />
     <Compile Include="public\javascripts\viewmodels\gameViewmodel.js" />
+    <Compile Include="public\javascripts\views\gamelistView.js" />
     <Compile Include="routes\api\v1\gamelists.js" />
     <Compile Include="routes\api\v1\users.js" />
     <Compile Include="routes\index.js" />
@@ -45,7 +47,7 @@
     <Content Include="dev.env" />
     <Content Include="package.json" />
     <Content Include="Procfile" />
-    <Content Include="public\html\gamelists.html" />
+    <Content Include="public\javascripts\templates\gamelists.html" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
     <Content Include="views\index.jade" />
@@ -58,7 +60,8 @@
     <Folder Include="public\javascripts\" />
     <Folder Include="public\javascripts\lib\" />
     <Folder Include="public\html\" />
-    <Folder Include="public\views\" />
+    <Folder Include="public\javascripts\templates\" />
+    <Folder Include="public\javascripts\views\" />
     <Folder Include="public\javascripts\viewmodels\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />

@@ -24,7 +24,7 @@ app.configure('development', function () {
     env(__dirname + '/dev.env');
 });
 
-var db = monk(process.env.CONNECTION_STRING);
+var db = monk(process.env.CONNECTION_STRING || '');
 
 
 // all environments

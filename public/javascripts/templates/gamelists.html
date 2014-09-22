@@ -1,0 +1,18 @@
+﻿<div id="gamelists">
+    <table>
+        <thead>
+            <th>#</th>
+            <th>date</th>            
+            <th>visitor</th>
+            <th>home</th>
+        </thead>
+        <tbody data-bind="foreach: games">
+            <tr>
+                <td data-bind="text: gameDate"></td>
+                <td data-bind="text: gameNumber"></td>
+                <td data-bind="text: visitor"></td>
+                <td data-bind="text: home"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

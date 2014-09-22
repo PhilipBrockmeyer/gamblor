@@ -1,11 +1,21 @@
-﻿define(['jquery', 'knockout', 'viewmodels/gamelistViewmodel'], function ($, ko, viewmodel) {
-    return function gamelistView() {
-        var self = this;
+﻿define(['jquery', 'knockout', 'viewmodels/gamelistViewmodel', 'text!templates/gamelists.html'], function ($, ko, viewmodel, template) {
+    function gamelistView(element) {
+        this.element = element;
+        this.$el = $(element);
+        this.$el.html(template);
 
         this.viewmodel = new viewmodel();
+        this.viewmodel.load();
+        
+        ko.applyBindings(this.viewmodel, this.element);
+    }
 
-        this.init = function(element) {
-
-        };
+    gamelistView.prototype = {
+        init: function () {
+            
+        }
     };
+
+    return gamelistView;
+
 });
