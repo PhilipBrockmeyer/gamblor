@@ -6,7 +6,7 @@
 var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/users');
-var gamelistApi = require('./routes/api/v1/gamelists');
+var oddsetsApi = require('./routes/api/v1/oddsets');
 var usersApi = require('./routes/api/v1/users');
 var http = require('http');
 var path = require('path');
@@ -48,7 +48,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', routes.index);
 app.get('/users', user.list);
 
-app.get('/api/v1/gamelists', gamelistApi.list);
+app.get('/api/v1/oddsets', oddsetsApi.index);
 app.get('/api/v1/users', usersApi.list);
 
 http.createServer(app).listen(app.get('port'), function(){

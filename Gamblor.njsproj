@@ -31,15 +31,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="resources\constants.js" />
     <Compile Include="public\javascripts\lib\jquery-2.1.1.js" />
     <Compile Include="public\javascripts\lib\knockout.js" />
     <Compile Include="public\javascripts\main.js" />
     <Compile Include="public\javascripts\require.js" />
     <Compile Include="public\javascripts\text.js" />
-    <Compile Include="public\javascripts\viewmodels\gamelistViewmodel.js" />
-    <Compile Include="public\javascripts\viewmodels\gameViewmodel.js" />
+    <Compile Include="public\javascripts\viewmodels\oddsetsViewmodel.js" />
+    <Compile Include="public\javascripts\viewmodels\oddsetGameViewmodel.js" />
     <Compile Include="public\javascripts\views\gamelistView.js" />
-    <Compile Include="routes\api\v1\gamelists.js" />
+    <Compile Include="queries\currentOddsetQuery.js" />
+    <Compile Include="routes\api\v1\oddsets.js" />
     <Compile Include="routes\api\v1\users.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
@@ -55,6 +57,9 @@
     <Content Include="views\userlist.jade" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="resources\" />
+    <Folder Include="queries\" />
+    <Folder Include="tasks\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
