@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
-    <Compile Include="resources\constants.js" />
+    <Compile Include="queries\index.js" />
     <Compile Include="public\javascripts\lib\jquery-2.1.1.js" />
     <Compile Include="public\javascripts\lib\knockout.js" />
     <Compile Include="public\javascripts\main.js" />
@@ -40,7 +40,10 @@
     <Compile Include="public\javascripts\viewmodels\oddsetsViewmodel.js" />
     <Compile Include="public\javascripts\viewmodels\oddsetGameViewmodel.js" />
     <Compile Include="public\javascripts\views\gamelistView.js" />
-    <Compile Include="queries\currentOddsetQuery.js" />
+    <Compile Include="queries\oddsetByProviderAndWeek.js" />
+    <Compile Include="constants\index.js" />
+    <Compile Include="constants\oddsProviders.js" />
+    <Compile Include="constants\teams.js" />
     <Compile Include="routes\api\v1\oddsets.js" />
     <Compile Include="routes\api\v1\users.js" />
     <Compile Include="routes\index.js" />
@@ -57,7 +60,7 @@
     <Content Include="views\userlist.jade" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="resources\" />
+    <Folder Include="constants\" />
     <Folder Include="queries\" />
     <Folder Include="tasks\" />
     <Folder Include="public\" />

@@ -12,6 +12,8 @@ var http = require('http');
 var path = require('path');
 var mongo = require('mongodb');
 var monk = require('monk');
+var constants = require('./constants');
+var queries = require('./queries');
 
 var app = express();
 
@@ -38,6 +40,8 @@ app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(function (req, res, next) {
     req.db = db;
+    req.constants = constants;
+    req.queries = queries;
     next();
 });
 app.use(app.router);

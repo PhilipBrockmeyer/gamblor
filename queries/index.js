@@ -1,0 +1,1 @@
+﻿exports.oddsetByProviderAndWeek = require('./oddsetByProviderAndWeek').query;
