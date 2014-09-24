@@ -1,7 +1,7 @@
 ﻿var request = require('request');
 var jsdom = require('jsdom');
 
-exports.parser = require('./sportselectOddsetParser').parser = function(callback) {
+exports.parser = function(callback) {
     request.get('http://sportselect.wclc.com/Proline-Gamelist-html.htm', function(error, response, body) {
         jsdom.env(body, [], function(err, window) {
             var results = parseGamesFromSportSelect(window);

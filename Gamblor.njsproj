@@ -31,6 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="parsers\index.js" />
+    <Compile Include="parsers\nflGamesParser.js" />
+    <Compile Include="parsers\sportselectOddsetParser.js" />
+    <Compile Include="queries\gamesByWeek.js" />
     <Compile Include="queries\index.js" />
     <Compile Include="public\javascripts\lib\jquery-2.1.1.js" />
     <Compile Include="public\javascripts\lib\knockout.js" />
@@ -61,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="constants\" />
+    <Folder Include="parsers\" />
     <Folder Include="queries\" />
     <Folder Include="tasks\" />
     <Folder Include="public\" />

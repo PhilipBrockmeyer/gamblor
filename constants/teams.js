@@ -1,18 +1,34 @@
-﻿exports.value = [
-    {
-    name: 'Buffalo Bills',
-    shortname: 'BUF'
-},
-    {
-    name: 'Miami Dolphins',
-    shortname: 'MIA'
-},
-    {
-    name: 'New England Patriots',
-    shortname: "NE"
-},
-    {
-    name: 'New York Jets',
-    shortname: "NYJ"
-}
-];
+﻿exports.value = {
+    "BUF" : { "abbr" : "BUF", "city" : "Buffalo", "nickname" : "Bills", "conference": "AFC", "division": "East" },
+    "MIA" : { "abbr" : "MIA", "city" : "Miami", "nickname" : "Dolphins", "conference": "AFC", "division": "East" },
+    "NE" : { "abbr" : "NE", "city" : "New England", "nickname" : "Patriots", "conference": "AFC", "division": "East"},
+    "NYJ" : { "abbr" : "NYJ", "city" : "New York", "nickname" : "Jets", "conference": "AFC", "division": "East"},
+    "BAL" : { "abbr" : "BAL", "city" : "Baltimore", "nickname" : "Ravens", "conference": "AFC", "division": "North" },
+    "CIN" : { "abbr" : "CIN", "city" : "Cincinnati", "nickname" : "Bengals", "conference": "AFC", "division": "North" },
+    "CLE" : { "abbr" : "CLE", "city" : "Cleveland", "nickname" : "Browns", "conference": "AFC", "division": "North" },
+    "PIT" : { "abbr" : "PIT", "city" : "Pittsburgh", "nickname" : "Steelers", "conference": "AFC", "division": "North" },
+    "HOU" : { "abbr" : "HOU",  "city" : "Houston", "nickname" : "Texans", "conference": "AFC", "division": "South" },
+    "IND" : { "abbr" : "IND",  "city" : "Indianapolis", "nickname" : "Colts", "conference": "AFC", "division": "South" },
+    "JAC" : { "abbr" : "JAC",  "city" : "Jacksonville", "nickname" : "Jaguars", "conference": "AFC", "division": "South" },
+    "TEN" : { "abbr" : "TEN", "city" : "Tennessee", "nickname" : "Titans", "conference": "AFC", "division": "South" },
+    "DEN" : { "abbr" : "DEN", "city" : "Denver", "nickname" : "Broncos", "conference": "AFC", "division": "West" },
+    "KC" : { "abbr" : "KC", "city" : "Kansas City", "nickname" : "Chiefs", "conference": "AFC", "division": "West" },
+    "OAK" : { "abbr" : "OAK", "city" : "Oakland", "nickname" : "Raiders", "conference": "AFC", "division": "West" },
+    "SD" : { "abbr" : "SD", "city" : "San Diego", "nickname" : "Chargers", "conference": "AFC", "division": "West" },
+    "DAL" : { "abbr" : "DAL", "city" : "Dallas", "nickname" : "Cowboys", "conference": "NFC", "division": "East" },
+    "NYG" : { "abbr" : "NYG", "city" : "New York", "nickname" : "Giants", "conference": "NFL", "division": "East" },
+    "PHI" : { "abbr" : "PHI", "city" : "Philadelphia", "nickname" : "Eagles", "conference": "NFC", "division": "East" },
+    "WAS" : { "abbr" : "WAS", "city" : "Washington", "nickname" : "Redskins", "conference": "NFC", "division": "East" },
+    "CHI" : { "abbr" : "CHI", "city" : "Chicago", "nickname" : "Bears", "conference": "NFC", "division": "North" },
+    "DET" : { "abbr" : "DET", "city" : "Detroit", "nickname" : "Lions", "conference": "NFC", "division": "North" },
+    "GB" : { "abbr" : "GB", "city" : "Green Bay", "nickname" : "Packers", "conference": "NFC", "division": "North" },
+    "MIN" : { "abbr" : "MIN", "city" : "Minnesota", "nickname" : "Vikings", "conference": "NFC", "division": "North" },
+    "ATL" : { "abbr" : "ATL", "city" : "Atlanta", "nickname" : "Falcons", "conference": "NFC", "division": "South" },
+    "CAR" : { "abbr" : "CAR", "city" : "Carolina", "nickname" : "Panthers", "conference": "NFC", "division": "South" },
+    "NO" : { "abbr" : "NO", "city" : "New Orleans", "nickname" : "Saints", "conference": "NFC", "division": "South" },
+    "TB" : { "abbr" : "TB", "city" : "Tampa Bay", "nickname" : "Buccaneers", "conference": "NFC", "division": "South" },
+    "ARI" : { "abbr" : "ARI", "city" : "Arizona", "nickname" : "Cardinals", "conference": "NFC", "division": "West" },
+    "STL" : { "abbr" : "STL", "city" : "St. Louis", "nickname" : "Rams", "conference": "NFC", "division": "West" },
+    "SF" : { "abbr" : "SF", "city" : "San Francisco", "nickname" : "49ers", "conference": "NFC", "division": "West" },
+    "SEA" : { "abbr" : "SEA", "city" : "Seattle", "nickname" : "Seahawks", "conference": "NFC", "division": "West" }
+};
